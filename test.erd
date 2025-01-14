@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -168.2888,
+    "scrollLeft": -181.1818,
+    "zoomLevel": 1,
+    "show": 431,
+    "database": 4,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [],
+    "relationshipIds": [],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "nBN-p6LGeHtMq-Q50YTi0": {
+        "id": "nBN-p6LGeHtMq-Q50YTi0",
+        "name": "user",
+        "comment": "s",
+        "columnIds": [
+          "E-nGOtBy5-xWRJ3COi4f6"
+        ],
+        "seqColumnIds": [
+          "E-nGOtBy5-xWRJ3COi4f6"
+        ],
+        "ui": {
+          "x": 271.9785882352942,
+          "y": 139.16329411764713,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1736279087152,
+          "createAt": 1736279069172
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "E-nGOtBy5-xWRJ3COi4f6": {
+        "id": "E-nGOtBy5-xWRJ3COi4f6",
+        "tableId": "nBN-p6LGeHtMq-Q50YTi0",
+        "name": "ss",
+        "comment": "",
+        "dataType": "",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1736279092904,
+          "createAt": 1736279087152
+        }
+      }
+    },
+    "relationshipEntities": {},
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  },
+  "lww": {
+    "nBN-p6LGeHtMq-Q50YTi0": [
+      "tableEntities",
+      1736279069168,
+      1736279095610,
+      {
+        "name": 1736279078153,
+        "comment": 1736279080618
+      }
+    ],
+    "E-nGOtBy5-xWRJ3COi4f6": [
+      "tableColumnEntities",
+      1736279087150,
+      -1,
+      {
+        "name": 1736279092903
+      }
+    ]
+  }
+}
