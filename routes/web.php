@@ -3,6 +3,7 @@
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use App\Livewire\Lcategory;
+use App\Livewire\Ldiscount;
 use App\Livewire\Lpost;
 use App\Livewire\Lproduct;
 use App\Livewire\Luser;
@@ -42,6 +43,7 @@ route::middleware('can:admin','auth')->prefix('admin')->group(function(){
     route::get('products', Lproduct::class)->can('admin');
     route::get('categories' , Lcategory::class)->name('categoryRouteName');
     route::get('variations',Lvariation::class);
+    route::get('discounts',Ldiscount::class);
 });
 
 

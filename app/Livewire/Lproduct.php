@@ -169,6 +169,7 @@ class Lproduct extends Component
             alert($e);
         }
         $this->pageStatus = null;
+        $this->editImage = null ;
     }
 
     public function addNewCategory(){

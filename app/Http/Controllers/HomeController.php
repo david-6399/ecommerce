@@ -44,13 +44,6 @@ class HomeController extends Controller
         $user = auth()->user();
         $product = $user->cart->items;
 
-        // $product = cartItem::where('cartId','=',$user->cart->id)->with('product')->get();
-        
-        // foreach($product as $test){
-        //     echo 'quantity' . $test->quantity ;
-        // }
-
-        // dd($test);
 
         return view('users.cart',[
             'products' => $product

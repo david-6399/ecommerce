@@ -54,7 +54,7 @@
 				<div class="col-lg-3 col-md-6 text-center strawberry">
                     <div class="single-product-item">
                         <div class="product-image">
-                            <a href="single-product.html"><img src="assets/img/products/product-img-1.jpg" alt=""></a>
+                            <a href="single-product.html"><img src="{{asset($product->imagePath)}}" alt=""></a>
 						</div>
 						<h6>{{$product->name}}</h6>
 						<p class="product-price"><span><b>{{$product->Quantity}} -</b> In Stock</span> {{$product->unitPrice}} DA </p>

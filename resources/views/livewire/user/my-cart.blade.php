@@ -20,8 +20,8 @@
 								@foreach($products as $product)
 									
 								<tr class="table-body-row">
-									<td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a></td>
-									<td class="product-image"><img src="assets/img/products/product-img-1.jpg" alt=""></td>
+									<td class="product-remove" wire:click='removeProductFromCart({{$product->id}})'><i class="far fa-window-close"></i></td>
+									<td class="product-image"><img src="{{asset($product->imagePath)}}" alt=""></td>
 									<td class="product-name">{{$product->name}}</td>
 									<td class="product-price">{{$product->unitPrice}} DA</td>
 									<td class="product-quantity"><input type="number" min="1" wire:model='quantity.{{$product->id}}'
@@ -46,21 +46,21 @@
 							<tbody>
 								<tr class="total-data">
 									<td><strong>Subtotal: </strong></td>
-									<td>$500</td>
+									<td>{{$totalAmount}} DA</td>
 								</tr>
 								<tr class="total-data">
 									<td><strong>Shipping: </strong></td>
-									<td>$45</td>
+									<td>500 DA</td>
 								</tr>
 								<tr class="total-data">
 									<td><strong>Total: </strong></td>
-									<td >{{$totalAmount}}</td>
+									<td>{{$totalAmount + 500}} DA</td>
 								</tr>
 							</tbody>
 						</table>
 						<div class="cart-buttons">
 							<a wire:click='saveQuantity()' class="boxed-btn">Update Cart</a>
-							<a href="checkout.html" class="boxed-btn black">Check Out</a>
+							<a class="boxed-btn black" wire:click='checkOut()'>Check Out</a>
 						</div>
 					</div>
 

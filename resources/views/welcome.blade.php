@@ -214,9 +214,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/admin/variations" class="nav-link {{ getUrlName('variations', 'active') }}">
+                            <a href="/admin/discounts" class="nav-link {{ getUrlName('discounts', 'active') }}">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>List of variation</p>
+                                <p>Manage Discounts</p>
                             </a>
                         </li>
                     </ul>
